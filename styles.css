@@ -54,7 +54,7 @@ input{
     -webkit-appearance: none;
     outline: none;
     border: 0.5px solid #bbb;
-    color: #eee;
+    color: grey;
 } 
 
 .add-btn {

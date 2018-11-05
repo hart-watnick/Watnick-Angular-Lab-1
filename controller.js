@@ -16,9 +16,15 @@ function ToDoController() {
         task: "Confess love for dog",
         completed: true
     }]
-    vm.addToDo = (newTask) => {
-        vm.list.push(angular.copy(newTask));
+    vm.addTask = (newTask) => {
+        vm.list.push(angular.copy({task: newTask, completed: false}));
+        console.log(newTask);
     };
+    vm.removeTask = (index) => {
+        vm.list.splice(index, 1);
+        console.log(index);
+    };
+
 
 }
 
