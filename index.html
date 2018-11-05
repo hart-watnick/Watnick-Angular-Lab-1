@@ -17,7 +17,7 @@
             <section>
                 <ol>
                     <li ng-repeat = "thing in $ctrl.list | filter: $ctrl.filterList track by $index" ng-class= "{'complete': thing.completed === true}">
-                        <button class= "complete-btn" ng-if = "thing.completed === false" ng-click= "thing.completed = true">Complete</button> 
+                        <button class= "complete-btn" ng-if = "thing.completed === false" ng-click= "$ctrl.completeTask(thing)">Complete</button> 
                         {{thing.task}} 
                         <button class = "x" ng-click = "$ctrl.removeTask($index);";>X</button>
                     </li>

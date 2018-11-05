@@ -25,6 +25,10 @@ function ToDoController() {
         console.log(index);
     };
 
+    vm.completeTask = (task) => {
+        task.completed = true;
+    };
+ 
 
 }
 
